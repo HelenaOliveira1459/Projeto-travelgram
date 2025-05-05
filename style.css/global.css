@@ -22,11 +22,22 @@
  --text-md: regular 14px/170% var(--font-family);
  --text-sm: regular 12px/170% var(--font-family);   
   
-
+ 
 
 }
 
 body { /*específico body*/
   color: var(--text-color-secondary);
   background-color: var(--background-color);
+  
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /*herdeiro, vai herdar as cores do projeto*/
+}
+
+a:hover {
+  color: var(--brand-color);
+  text-decoration: underline;
 }
