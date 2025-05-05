@@ -8,7 +8,7 @@
   /*cores*/
   --brand-color: #EF5F4C;
   --background-color: #FFFFFF;
-  --surface-color: #FFFFFF;
+  --surface-color: #F5F5F5;
   --skeleton-color:#D9D9D9;
   --shape-transparency: #ffffff56 56%;
   --text-color-primary: #313131;
@@ -37,7 +37,16 @@ a {
   color: inherit; /*herdeiro, vai herdar as cores do projeto*/
 }
 
-a:hover {
+a:hover { /* muda a cor do item quando passa o mouse*/
   color: var(--brand-color);
-  text-decoration: underline;
+  text-decoration: underline; /*alinhado ao elemtneo ao lado*/
+}
+
+.container {
+   padding-inline: 32px ; /*padding lateral, eixo x*/
+   max-width: 1280px; /*tamanho máximo da página*/
+   margin-inline: auto; /*alinha o projeto ao meio da pag*/
+}
+.bg-surface-color {
+  background-color: var(--surface-color);
 }
